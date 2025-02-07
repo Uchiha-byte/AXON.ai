@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: white; 
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #aaa 10%, #000 90%); 
+}
+
+#main {
+    position: relative;
+    overflow: hidden;
+}
+
+#page, #page1, #page2, #page3 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, #aaa 10%, #000 90%); 
+}
+
+canvas {
+    position: relative;
+    z-index: 9;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+#loop {
+    display: flex;
+    position: absolute;
+    top: 15%;
+    height: 20%;
+    width: 100%;
+    font-size: 80px;
+    white-space: nowrap;
+    font-family: gilroy;
+}
+
+#loop > h1 {
+    font-weight: 400;
+    color: white;
+    animation: anim 15s linear infinite;
+}
+
+#loop > h1 > span {
+    -webkit-text-stroke: 1.2px white;
+    color: transparent;
+    font-weight: 500;
+}
+
+
+
+
+#loop1 {
+    display: flex;
+    position: absolute;
+    top: 10%;
+    height: 20%;
+    width: 100%;
+    font-size: 80px;
+    white-space: nowrap;
+    font-family: gilroy;
+}
+
+#loop1 > h1 {
+    font-weight: 400;
+    color: rgb(55, 53, 53);
+    animation: anim 15s linear infinite;
+}
+
+#loop1 > h1 > span {
+    -webkit-text-stroke: 1.2px rgb(10, 10, 10);
+    color: transparent;
+    font-weight: 500;
+}
+
+
+
+
+@keyframes anim {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15%;
+    width: 100%;
+    z-index: 99;
+    padding: 0px 30px;
+    background: rgba(0, 0, 0, 0.8); /* transparency */
+}
+#nav > h7 {
+    font-family: gilroy;
+    font-size: 35px;
+}
+
+#nav > h3 {
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+#nav > button1 {
+    font-size: 10px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: linear-gradient(to bottom, #aaa 30%, #000 70%) ;
+    color: rgb(176, 173, 173);
+    border: none;
+    font-weight: bold;
+}
+#nav > button1 {
+    font-size: 25px;
+    cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 50px;
+    background: linear-gradient(to bottom, #888 30%, #222 70%);
+    color: white;
+    border: 2px solid white;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+#nav button1:hover {
+    background: white;
+    color: black;
+}
+#nav1 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 15%;
+    width: 100%;
+    z-index: 99;
+    padding: 0px 30px;
+    background: rgba(0, 0, 0, 0.8); /* transparency */
+}
+#nav1 > h7 {
+    font-family: gilroy;
+    font-size: 35px;
+    text-align: center;
+    padding: 450px;
+}
+
+
+
+
+.scroll-content {
+    height: 2000px; /* Adjust height */
+    background-color: lightgray; /* visibility */
+}
+
+#logo {
+    bottom: 50px;
+    height: 140px; 
+    width: auto; 
+    border: none;
+}
+#logo1{
+    bottom: 45px;
+    height: 100px; 
+    width: auto; 
+    border: none;
+}
+
+
+#page > h3 {
+    position: absolute;
+    top: 60%;
+    right: 60%;
+    font-family: gilroy;
+    font-weight: 400;
+    color: #ddd;
+    left: 5%;
+}
+
+#page > h4 {
+    color:azure;
+    position: absolute;
+    top: 73%;
+    left: 20%;
+    font-family: gilroy;
+    font-weight: 500;
+}
+
+#page1 > #right-text {
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+
+#page1 > #right-text > h3 {
+    font-weight: 400;
+    color: #ddd;
+}
+
+#page1 > #right-text > h1 {
+    line-height: 1.5;
+    font-size: 45px;
+}
+
+#page1 > #left-text {
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    text-align: end;
+}
+
+#page1 > #left-text > h1 {
+    font-size: 45px;
+    line-height: 1.5;
+}
+
+#page1 > #left-text > h3 {
+    color: #ddd;
+    font-weight: 400;
+}
+
+#page2 > #text1 {
+    position: absolute;
+    top: 30%;
+    left: 8%;
+}
+
+#page2 > #text1 > h3 {
+    color: #ddd;
+    font-weight: 400;
+}
+
+#page2 > #text1 > h1 {
+    font-size: 55px;
+    line-height: 1.5;
+}
+
+#page2 > #text2 {
+    position: absolute;
+    top: 55%;
+    right: 8%;
+    text-align: end;
+}
+
+#page2 > #text2 > p {
+    color: #ddd;
+    font-weight: 400;
+}
+
+#page3 > #text3 {
+    position: absolute;
+    top: 40%;
+    right: 8%;
+    text-align: end;
+}
+
+#page3 > #text3 > h3 {
+    color: #ddd;
+    font-weight: 400;
+}
+
+#page3 > #text3 > h1 {
+    font-size: 65px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+input {
+  caret-color: gray;
+}
+
+.container {
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: linear-gradient(to top, #aaa 10%, #000 90%);;
+  box-shadow: 14px 14px 20px #39393a, -14px -14px 20px rgb(104, 103, 103);
+}
+
+.brand-logo {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #5d5e5f, -7px -7px 10px rgb(100, 98, 98);
+}
+#brand-logo1{
+    height: 10px;
+}
+
+.brand-title {
+    border: 2px solid #fefffe; /* You can change the color */
+    box-shadow: 0 0 10px #f9f7f7, 0 0 20px #ffffff, 0 0 30px #f0f1f0; /* Glow effect */
+    transition: box-shadow 0.3s ease-in-out;
+  margin-top: 10px;
+  margin-left: 15px;
+  font-weight: 90;
+  font-size: 39px;
+  color: black;
+  letter-spacing: 1px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #0d0000 30%, #5e5b5b 70%) ;
+  color: rgb(176, 173, 173);
+  border: none;
+  font-weight: bold;
+}
+
+.brand-title:hover {
+    box-shadow: 0 0 15px #ff0000, 0 0 25px #ff0000, 0 0 35px #ff0000; /* Change the glow on hover */
+  }
+
+.inputs {
+  text-align: left;
+  margin-top: 30px;
+}
+
+label, input, button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+label:nth-of-type(2) {
+  margin-top: 12px;
+}
+
+input::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+input {
+  background: #464647;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #000000, inset -6px -6px 6px white;
+}
+
+button {
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  background: #6d6f6f;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+button:hover {
+  box-shadow: none;
+}
+#image1{
+    width: 50%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block ;
+}
+form{
+    position: absolute;
+    top: 10%;
+    right: 94%;                           
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
